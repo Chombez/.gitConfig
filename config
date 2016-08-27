@@ -1,0 +1,39 @@
+[user]
+
+	name = Ryan Dicembre
+	email = ryandicembre@gmail.com
+
+[core]
+
+	editor = vim
+
+[color]
+
+	ui = auto
+
+[diff]
+
+	# Use more time for better diffs
+	algorithm = patience
+
+	# Detect renames and copies
+	renames = copies
+
+	# Use vimdiff when using `git difftool`
+	tool = vimdiff
+
+	# Use experimental (but better) diff engine
+	compactionHeuristic = true
+
+[push]
+
+	default = simple
+
+[commit]
+
+# Default commit message
+	template = ~/.config/git/templates/commit_message
+
+# Show diff in commit message commented out
+	verbose = true
+
