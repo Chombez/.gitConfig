@@ -6,7 +6,7 @@
 [core]
 
 	editor = vim
-	excludesfile = ~/.config/git/.globalignore
+	excludesfile = $HOME/.config/git/.globalignore
 
 [color]
 
