@@ -26,6 +26,10 @@
 	# Use experimental (but better) diff engine
 	compactionHeuristic = true
 
+[alias]
+
+	log = log --graph --decorate --date=relative --abbrev-commit
+
 [push]
 
 	default = simple
