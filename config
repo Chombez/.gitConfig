@@ -7,28 +7,42 @@
 
 	editor = vim
 	excludesfile = $HOME/.config/git/.globalignore
+	pager = "diff-highlight | less -RFX"
 
 [color]
 
 	ui = auto
 
+[color "diff"]
+
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "diff-highlight"]
+
+	oldNormal = "red bold"
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+
 [diff]
 
 	# Use more time for better diffs
-	algorithm = patience
-
+	algorithm = minimal
 	# Detect renames and copies
 	renames = copies
-
 	# Use vimdiff when using `git difftool`
 	tool = vimdiff
-
-	# Use experimental (but better) diff engine
-	compactionHeuristic = true
+	# Shift diff hunk boundaries to make patches easier to read.
+	indentHeuristic = true
 
 [alias]
 
-	log = log --graph --decorate --date=relative --abbrev-commit
+	lg = log --graph --decorate --date=relative --abbrev-commit
 
 [push]
 
@@ -38,7 +52,6 @@
 
 # Default commit message
 	template = ~/.config/git/templates/commit_message
-
 # Show diff in commit message commented out
 	verbose = true
 
