@@ -6,7 +6,7 @@
 [core]
 
 	editor = vim
-	excludesfile = $HOME/.config/git/.globalignore
+	excludesfile = ~/.config/git/.globalignore
 	pager = "diff-highlight | less -RFX"
 
 [color]
@@ -45,6 +45,7 @@
 	lg = log --graph --decorate --date=relative --abbrev-commit
 	sdiff = diff --cached
 	co = checkout
+	cf = clang-format
 
 [push]
 
