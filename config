@@ -45,6 +45,7 @@
 	lg = log --graph --decorate --date=relative --abbrev-commit
 	sdiff = diff --cached
 	co = checkout
+	st = status
 	cf = clang-format
 
 [push]
