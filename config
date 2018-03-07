@@ -7,7 +7,7 @@
 
 	editor = vim
 	excludesfile = ~/.config/git/.globalignore
-	pager = "diff-highlight | less -RFX"
+	pager = "diff-highlight | less -RFXx4"
 
 [color]
 
