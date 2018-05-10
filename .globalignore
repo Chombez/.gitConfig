@@ -2,3 +2,4 @@
 *.pyc
 .ycm_extra_conf.py
 compile_commands.json
+find_all_symbols_db.yaml
