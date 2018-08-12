@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/bin/sh
+sed -i '/>8/,$d' $1
 echo -e '\n\n' >> $1
 git rev-parse --abbrev-ref HEAD >> $1
